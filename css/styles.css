@@ -122,3 +122,92 @@ body {
 	background-position: center;
 	background-size: cover;
 }
+
+/*! Button home  */
+.page-home-button {
+	margin-bottom: 100px;
+}
+.button-home {
+}
+.button-home-container {
+}
+.button-home-button {
+	display: inline-flex;
+	gap: 10px;
+	align-items: center;
+	padding: 20px 30px;
+	background-color: teal;
+	color: #fff;
+	border-radius: 15px;
+	transition: background-color 0.3s ease 0s;
+}
+
+.button-home-button::before {
+	content: '';
+	background-image: url('https://3627081962-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FTOxx7nSUyW1jh74KR9zH%2Fuploads%2FAzNE61bQRW5fLudWUIsr%2F9.png?alt=media');
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	/* margin-right: 10px; */
+}
+
+.button-home-button:hover,
+.button-home-button:focus {
+	background-color: palevioletred;
+}
+
+/*! Cards home */
+.page-home-cards {
+	margin-bottom: 100px;
+}
+.cards-home {
+}
+.cards-home-container {
+}
+.cards-home-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.cards-home-item {
+	flex: 0 1 calc((100% - 30px * 2) / 3);
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.cards-home-item::before {
+	content: '';
+	height: 120px;
+	display: block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 20px;
+}
+
+.cards-home-item:nth-child(1)::before {
+	background-image: url('../img/bird.webp');
+}
+
+.cards-home-item:nth-child(2)::before {
+	background-image: url('../img/cat.webp');
+}
+
+.cards-home-item:nth-child(3)::before {
+	background-image: url('../img/dog.webp');
+}
+
+.cards-home-title {
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.cards-home-text {
+	font-size: 16px;
+}
+
+.cards-home-text:not(:last-child) {
+	margin-bottom: 10px;
+}
